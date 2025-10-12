@@ -2,26 +2,21 @@
 type TituloProps = {
     texto : string;
     size? : number;
+    align?: "left" | "center" | "right";
 }
 
 
 const tituloStyle: React.CSSProperties = {
-    fontSize: 40,
-    fontWeight: 800,
-    color: "#E5E7EB",
-    margin: "8px 0 10px",
-    lineHeight: 1.1,
-    letterSpacing: "0.3px",
-
-    display: "inline-block",
-    textAlign: "center",
-
-    textShadow: "0 1px 0 rgba(0,0,0,.35)",
+    fontWeight: 600,
+    margin: "2rem 0 0.5rem 0",
+    lineHeight: 1.2,
+    color: "#1a1a1a",
+    fontFamily: "'Inter', system-ui, sans-serif"
 };
 
-const Titulo = ( {texto, size = 40} : TituloProps)  => {
+const Titulo = ( {texto, size = 40, align = "left"} : TituloProps)  => {
     return (
-        <h1 style={{...tituloStyle, fontSize : size}}>
+        <h1 className="titulo" style={{...tituloStyle, fontSize : size, textAlign : align}}>
             {texto}
         </h1>
     )

@@ -5,7 +5,7 @@ type Props = {
 }
 
 const TechLogo = ({src,name, size = 22} : Props) => {
-    return <img 
+    return <img
                 src={src} 
                 alt={name} 
                 title={name} 

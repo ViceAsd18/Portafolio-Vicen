@@ -9,7 +9,7 @@ const ImagenPortada = ({src, alt, height = 160} : Props) => {
     return (
         <img src={src} alt={alt} style={{
             width : "100%",
-            height : height,
+            height,
             objectFit : "cover",
         }} />
     )

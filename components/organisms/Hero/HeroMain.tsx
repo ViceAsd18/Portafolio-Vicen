@@ -33,7 +33,7 @@ function HeroMain() {
     return (
         <section id="inicio" style={heroStyle} aria-label="Presentación">
             <div style={contentStyle}>
-                <Avatar alt="imagen vicente"></Avatar>
+                <Avatar alt="imagen vicente" size={260}></Avatar>
                 <TextGroup></TextGroup>
                 
                 <div style={containerBtn}>
