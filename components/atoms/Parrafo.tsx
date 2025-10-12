@@ -1,7 +1,7 @@
 const pStyle: React.CSSProperties = {
   fontSize: "20px",
   lineHeight: 1.6,
-  color: "#94A3B8",
+  color: "#374151",
   margin: "6px 0 10px",
   maxWidth: 640,
 };

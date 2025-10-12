@@ -2,22 +2,24 @@
 const btnStyle: React.CSSProperties = {
     display: "inline-flex",
     alignItems: "center",
+    justifyContent: "center",
     gap: 8,
     height: 44,
-    padding: "0 20px",
     borderRadius: 12,
-    border: "1px solid #334155",
-    background: "#0B1220",
-    color: "#E5E7EB",
-    fontSize: 16,
+    background: "#2563EB",
+    color: "#FFFFFF",
+    fontSize: 18,
     textDecoration: "none",
     cursor: "pointer",
+    transition: "all 0.3s ease",
+    padding: "6px 26px",
+
 };
 
 
 const BtnCv = () => {
     return (
-        <a style={btnStyle} href="/cv/VicenteRamirez_CV.pdf" download="VicenteRamirez_CV_Frontend.pdf">Descargar CV</a>
+        <a className="btn-cv" style={btnStyle} href="/cv/VicenteRamirez_CV.pdf" download="VicenteRamirez_CV_Frontend.pdf">Descargar CV</a>
 
     )
 }
