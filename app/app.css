@@ -1,17 +1,15 @@
 body {
   margin: 0;
-  background: linear-gradient(120deg, #f3f4f6, #e5e7eb, #f3f4f6);
+  background: linear-gradient(180deg, #f3f4f6 0%, #f8fafc 100%);
   background-size: 400% 400%;
   animation: subtleGradient 20s ease infinite;
+  
 }
 
 
-@keyframes subtleGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.seccion {
+  margin-top: 350px;
 }
-
 
 .contenedor-proyectos {
   display: grid;

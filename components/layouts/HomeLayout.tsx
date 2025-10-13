@@ -1,11 +1,11 @@
 import NavBar from "components/organisms/Navbar/Navbar"
 import HeroMain from "components/organisms/Hero/HeroMain"
 import ProyectosSection from "components/organisms/Proyectos/ProyectosSection";
+import SobreMiSection from "components/organisms/SobreMi/SobreMiSection";
 
 const paginaStyle: React.CSSProperties = {
   minHeight: "100dvh",
 };
-
 
 
 const HomeLayout = () => {
@@ -25,9 +25,15 @@ const HomeLayout = () => {
                     <HeroMain></HeroMain>
                 </section>
 
-                <section>
+                <section className="seccion">
+                    <SobreMiSection></SobreMiSection>
+                </section>
+
+                <section className="seccion">
                         <ProyectosSection></ProyectosSection>
                 </section>
+
+
                     
 
 
