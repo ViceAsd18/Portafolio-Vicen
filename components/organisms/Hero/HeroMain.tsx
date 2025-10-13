@@ -34,7 +34,7 @@ function HeroMain() {
         <section id="inicio" style={heroStyle} aria-label="Presentación">
             <div style={contentStyle}>
                 <Avatar alt="imagen vicente" size={260}></Avatar>
-                <TextGroup></TextGroup>
+                <TextGroup titulo="Vicente Ramírez" parrafo="Frontend Developer"></TextGroup>
                 
                 <div style={containerBtn}>
                     <ButtonGroup />

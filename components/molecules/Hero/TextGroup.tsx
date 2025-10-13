@@ -1,11 +1,11 @@
-import TituloHero from "components/atoms/Titulo"
-import ParrafoHero from "components/atoms/Parrafo"
+import Titulo from "components/atoms/Titulo"
+import Parrafo from "components/atoms/Parrafo"
 
-const TextGroup = () => {
+const TextGroup = ( {titulo, parrafo} : {titulo : string, parrafo : string}) => {
     return (
         <div>
-            <TituloHero texto="Vicente Ramírez" size={56}></TituloHero>
-            <ParrafoHero texto="Desarrollador Frontend" size={30}></ParrafoHero>
+            <Titulo texto={titulo} size={56}></Titulo>
+            <Parrafo texto={parrafo} size={30}></Parrafo>
         </div>
 
     )
