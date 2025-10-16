@@ -15,8 +15,8 @@ const navListStyle: React.CSSProperties = {
 const Navlist = () => {
     return (
         <div style={navListStyle}>
-            <BtnNavbar to="/inicio" texto="Inico"></BtnNavbar>
-            <BtnNavbar to="/sobre-mi" texto="Sobre mí"></BtnNavbar>
+            <BtnNavbar to="/inicio" texto="Inicio"></BtnNavbar>
+            <BtnNavbar to="#sobre-mi" texto="Sobre mí"></BtnNavbar>
             <BtnNavbar to="#proyectos" texto="Proyectos"></BtnNavbar>
             <BtnNavbar to="/tecnologias" texto="Tecnologías"></BtnNavbar>
             <BtnNavbar to="/certificaciones" texto="Certificaciones"></BtnNavbar>

@@ -1,11 +1,11 @@
-import Titulo from "components/atoms/Titulo"
-import Parrafo from "components/atoms/Parrafo"
+import Titulo from "components/atoms/General/Titulo"
+import Parrafo from "components/atoms/General/Parrafo"
 
 const TextGroup = ( {titulo, parrafo} : {titulo : string, parrafo : string}) => {
     return (
         <div>
-            <Titulo texto={titulo} size={56}></Titulo>
-            <Parrafo texto={parrafo} size={30}></Parrafo>
+            <Titulo texto={titulo} nivel={1} variante="tituloPrimary"></Titulo>
+            <Parrafo texto={parrafo} size={30} align="center"></Parrafo>
         </div>
 
     )

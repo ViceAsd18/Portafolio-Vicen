@@ -2,6 +2,8 @@ import ButtonGroup from "components/molecules/Hero/ButtonGroup";
 import TextGroup from "components/molecules/Hero/TextGroup";
 import Avatar from "components/atoms/Hero/Avatar"
 
+import HeroBackground from "assets/background/backgroun-hero.png"
+
 const heroStyle: React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
@@ -9,8 +11,14 @@ const heroStyle: React.CSSProperties = {
     justifyContent: "center",
     gap: 24,
     textAlign: "center",
-    minHeight: "86vh",
+    height : "100vh",
     padding: "20px",
+
+    backgroundImage: `url(${HeroBackground})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
 };
 
 const contentStyle: React.CSSProperties = {

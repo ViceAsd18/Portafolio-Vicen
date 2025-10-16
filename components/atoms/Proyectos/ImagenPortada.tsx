@@ -5,12 +5,13 @@ type Props = {
 };
 
 
-const ImagenPortada = ({src, alt, height = 160} : Props) => {
+const ImagenPortada = ({src, alt} : Props) => {
     return (
         <img src={src} alt={alt} style={{
             width : "100%",
-            height,
+            height : "100%",
             objectFit : "cover",
+            display : 'block'
         }} />
     )
 }
