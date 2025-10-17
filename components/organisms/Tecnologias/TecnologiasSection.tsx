@@ -27,7 +27,7 @@ const TecnologiasSection = () => {
   return (
     <SectionContenedor>
         <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
-            <Titulo texto="Tecnologías" variante="tituloSecondary" />
+            <Titulo texto="Tecnologías" variante="tituloSecondary"  size={40}/>
 
             <Row gutter={[32, 32]}>
                 <Col xs={24} md={12}>

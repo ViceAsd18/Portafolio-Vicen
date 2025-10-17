@@ -13,9 +13,9 @@ type ParrafoProps = {
   margin?: string;
 };
 
-const Parrafo = ({texto, size = 18, align = "left", margin = "0", color = "#06B6D4" }: ParrafoProps) => {
+const Parrafo = ({texto, size = 18, align = "left", margin = "0", color }: ParrafoProps) => {
   return (
-    <p style={{...baseParrafo, fontSize: size, color, textAlign: align, margin,}}>
+    <p style={{...baseParrafo, fontSize: size, color : color , textAlign: align, margin,}}>
       {texto}
     </p>
   );

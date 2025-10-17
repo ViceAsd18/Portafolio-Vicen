@@ -4,6 +4,7 @@ import ProyectosSection from "components/organisms/Proyectos/ProyectosSection";
 import SobreMiSection from "components/organisms/SobreMi/SobreMiSection";
 import TecnologiasSection from "components/organisms/Tecnologias/TecnologiasSection"
 import CertificacionesSection from "components/organisms/Certificaciones/CertificacionesSection";
+import FooterSection from "components/organisms/Footer/FooterSection";
 
 const paginaStyle: React.CSSProperties = {
   minHeight: "100dvh",
@@ -21,11 +22,7 @@ const contentStyle : React.CSSProperties = {
 const HomeLayout = () => {
     return (
         <>
-            <nav style={{
-                position : "sticky",
-                top : 0,
-                zIndex : 1000
-            }}>
+            <nav style={{position : "sticky", top : 0, zIndex : 1000}}>
                     <NavBar></NavBar>
             </nav>
 
@@ -40,6 +37,7 @@ const HomeLayout = () => {
                         <ProyectosSection/>
                         <TecnologiasSection></TecnologiasSection>
                         <CertificacionesSection></CertificacionesSection>
+                        <FooterSection></FooterSection>
                 </div>
 
                     

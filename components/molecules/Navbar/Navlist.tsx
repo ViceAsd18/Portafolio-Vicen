@@ -20,7 +20,6 @@ const Navlist = () => {
             <BtnNavbar to="#proyectos" texto="Proyectos"></BtnNavbar>
             <BtnNavbar to="/tecnologias" texto="Tecnologías"></BtnNavbar>
             <BtnNavbar to="/certificaciones" texto="Certificaciones"></BtnNavbar>
-            <BtnNavbar to="/contacto" texto="Contacto"></BtnNavbar>
         </div>
     )
 }

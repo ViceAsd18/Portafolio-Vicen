@@ -11,7 +11,7 @@ const ProyectosSection = () => {
   return (
     <section id="proyectos">
 
-          <Titulo texto="Proyectos" align="center" variante="tituloSecondary"></Titulo>
+          <Titulo texto="Proyectos" align="center" variante="tituloSecondary" size={40}></Titulo>
 
               <div className="contenedor-proyectos">
 

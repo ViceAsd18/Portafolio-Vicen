@@ -10,7 +10,7 @@ const CertificacionesSection = () => {
         texto="Certificaciones"
         variante="tituloPrimary"
         align="center"
-        size={32}
+        size={40}
         margin="0 0 20px 0"
       />
 

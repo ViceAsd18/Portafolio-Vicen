@@ -18,7 +18,7 @@ const contenedorStyle : React.CSSProperties = {
 const ListaEducacion = () => {
   return (  
       <div style={contenedorStyle}>
-        <Titulo texto="Educacion" variante="tituloSecondary"></Titulo>
+        <Titulo texto="Educacion" variante="tituloSecondary" size={30}></Titulo>
         <div style={contenedorStyle}>
 
         <EducacionCard 

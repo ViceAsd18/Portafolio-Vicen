@@ -47,7 +47,7 @@ const CertCard = ({logo, titulo, emisor, fecha, skills, url} : Props) => {
     return (
         <article style={cardStyle}>
             <div style={logoContainer}>
-                <Logo src={logo} alt={emisor} size={72} style={logoStyle}/>
+                <Logo src={logo} alt={emisor} size={100} style={logoStyle}/>
             </div>
 
             <Titulo texto={titulo}
@@ -69,7 +69,7 @@ const CertCard = ({logo, titulo, emisor, fecha, skills, url} : Props) => {
                 ))}
             </div>
 
-            <Boton texto="Ver credencial" href={url}></Boton>
+            <Boton texto="Ver credencial" href={url} ></Boton>
 
         </article>
     )

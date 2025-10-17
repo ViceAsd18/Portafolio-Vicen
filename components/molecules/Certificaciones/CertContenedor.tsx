@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { certificaciones } from "./CertData";
+import { certificaciones } from "data/CertData";
 
 import CertFiltroBar from "./CertFiltroBar";
 import CertCard from "./CertCard";
@@ -12,17 +12,9 @@ const sectionStyle: React.CSSProperties = {
     margin: "0 auto",
     textAlign: "center",
     padding : "0 20px",
-    border : "2px solid red"
 };
 
-const contenedorCert : React.CSSProperties = {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "flex-start",
-    gap: 35,
-    margin: "0 auto",
-}
+
 
 const categorias = ["Todos", "Cloud", "DevOps", "Programación"];
 
@@ -50,7 +42,7 @@ const CertContenedor = () => {
 
             <Row gutter={[32,32]} justify="center" >
                 {certificacionesFiltradas.map((cert) => (
-                    <Col key={cert.id} xs={24} sm={12} md={12} lg={8} xl={8} xxl={6}>
+                    <Col key={cert.id} xs={24} sm={24} md={24} lg={12} xl={12} xxl={6}>
                         <CertCard {...cert} />
                     </Col>
                 ))}

@@ -18,7 +18,7 @@ const BotonStyle: React.CSSProperties = {
 
 const Boton = ({texto, href, onClick, style} : Props) => {
     return (
-        <Button type="primary" href={href} onClick={onClick} style={{...BotonStyle,...style}}>
+        <Button type="primary" href={href} onClick={onClick}  style={{...BotonStyle,...style}}>
             {texto}
         </Button>
     )

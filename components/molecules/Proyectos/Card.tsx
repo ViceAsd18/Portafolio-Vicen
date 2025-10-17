@@ -56,8 +56,8 @@ const Card = ({ titulo, descripcion, imagen, tecnologias }: Props) => {
       </div>
 
       <div style={bodyStyle} className="card-body">
-        <Titulo texto={titulo} align="center" variante="tituloTercero" nivel={4}/>
-        <Parrafo texto={descripcion} size={16} />
+        <Titulo texto={titulo} align="center" variante="tituloTercero" nivel={4} size={20}/>
+        <Parrafo texto={descripcion} size={16} color="#94a3b8"/>
         <div style={tecnologiasStyle} className="card-tech">
           {tecnologias.map((tech, i) => (
             <TechLogo key={i} src={tech.src} name={tech.name} size={40}/>
