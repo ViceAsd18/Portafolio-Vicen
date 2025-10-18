@@ -19,7 +19,7 @@ const cardStyle: React.CSSProperties = {
 
 const GrupoTecnologias = ({ titulo, tecnologias }: Props) => {
   return (
-    <Card style={cardStyle} bordered={false}>
+    <Card style={cardStyle}>
       <Titulo texto={titulo} variante="tituloTercero" align="left"  size={20}/>
       <Space
         size="large"

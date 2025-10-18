@@ -16,7 +16,7 @@ const buttonGroupStyle: React.CSSProperties = {
 
 const ButtonGroup = () => {
     return (
-        <div style={buttonGroupStyle}>
+        <div style={buttonGroupStyle} className="button-group">
             <BtnPrimary label="LinkedIn" 
                         href="https://www.linkedin.com/in/vicente-ram%C3%ADrez-21336b336/" 
                         icon={

@@ -26,9 +26,10 @@ const cardStyle: React.CSSProperties = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
-    width: 280,
-    height: 400,
+    width: 320,
+    height : 420,
     margin: "0 auto",
+    boxSizing : "border-box"
 }
 
 const logoContainer: React.CSSProperties = {
@@ -45,7 +46,7 @@ const logoStyle: React.CSSProperties = {
 
 const CertCard = ({logo, titulo, emisor, fecha, skills, url} : Props) => {
     return (
-        <article style={cardStyle}>
+        <article style={cardStyle} className="cert-card">
             <div style={logoContainer}>
                 <Logo src={logo} alt={emisor} size={100} style={logoStyle}/>
             </div>

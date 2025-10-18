@@ -88,7 +88,45 @@ body{
 
 
 
+@media (max-width: 800px) {
+  .navlist-desktop {
+    display: none !important;
+  }
+  .navlist-mobile-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
+@media (min-width: 800px) {
+  .navlist-mobile-button {
+    display: none !important;
+  }
+}
+
+
+
+
+/* Versión mobile: muestra botones apilados dentro del Drawer */
+.navlist-mobile > div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Oculta el estilo de la barra redondeada del Navlist dentro del Drawer */
+.navlist-mobile .btn-navbar {
+  width: 140px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+}
 
 
 
@@ -130,3 +168,208 @@ body{
 }
 
 
+/*DISEÑO RESPONSIVO*/
+
+/*DISEÑO CELULARES*/
+@media (max-width: 480px) {
+  .sobre-mi-section {
+    padding: 60px 24px !important;
+    margin-top: 60px !important;
+  }
+
+.sobre-mi-section .ant-row {
+    gap: 24px !important;
+    }
+
+ /* Grupo contenedor de los botones */
+  .btn-group,
+  .button-group {
+    display: flex;
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 28px !important;
+  }
+
+  /* sin height fijo; usa min-height + padding */
+  .btn-primary,
+  .btn-cv {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 10px 16px !important;
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+    border-radius: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Íconos dentro de los botones */
+  .btn-primary img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 6px !important;
+    flex-shrink: 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem !important;
+    margin: 20px 0px !important;
+  }
+
+  .hero-section p {
+    font-size: 1rem !important;
+  }
+
+  /* Sección principal */
+  .certificaciones-section {
+    padding: 50px 18px !important;
+    margin-top: 60px !important;
+  }
+
+  /* Contenedor de filtros */
+  .cert-filtros {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    background: rgba(255,255,255,0.05) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+    max-width: 340px !important;
+    margin: 0 auto 30px !important;
+  }
+
+  /* Botones del filtro */
+  .cert-filtros > * {
+    flex: 1 1 48%;
+    text-align: center;
+    font-size: 0.82rem !important;
+    padding: 6px 0 !important;
+    border-radius: 8px !important;
+    box-sizing: border-box;
+  }
+
+  /* Card de certificación */
+  .cert-card {
+    width: 100% !important;
+    max-width: 320px !important;
+    min-height: 340px !important;
+    padding: 20px 14px !important;
+    margin: 0 auto !important;
+    border-radius: 14px !important;
+  }
+
+  /* Logo */
+  .cert-card img {
+    width: 80px !important;
+    height: auto !important;
+  }
+
+  /* Título */
+  .cert-card h2,
+  .cert-card h3 {
+    font-size: 1.05rem !important;
+    margin-top: 6px !important;
+  }
+
+  /* Texto emisor-fecha */
+  .cert-card p {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Botón “Ver credencial” */
+  .cert-card a {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    padding: 8px 0 !important;
+    border-radius: 8px !important;
+  }
+  
+}
+
+
+@media (min-width: 1200px) {
+  .certificaciones-contendor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .certificaciones-contendor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📲 Celulares */
+@media (max-width: 480px) {
+  .certificaciones-contendor {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    border: 2px solid green;
+  }
+
+  .cert-card {
+    width: 300px;
+    height: 380px;
+  }
+}
+
+
+/* ORGANISMO: Contenedor principal */
+.cert-organismo {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+/* GRID: se adapta automáticamente */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  align-items: start;
+  margin-top: 40px;
+}
+
+/* CARD: tamaño uniforme */
+.cert-card {
+  width: 320px;
+  height: 420px;
+  box-sizing: border-box;
+}
+
+/* TABLET (≤992px): dos columnas */
+@media (max-width: 992px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* MÓVIL (≤480px): una columna y tamaño compacto */
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cert-card {
+    width: 300px;
+    height: 380px;
+  }
+}

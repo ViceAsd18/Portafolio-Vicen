@@ -29,7 +29,7 @@ const filtroBtnStyle: React.CSSProperties = {
 
 const CertFiltroBar = ({categorias, activa, onChangeFiltro} : Props) => {
     return (
-        <div style={filtrosStyle}>
+        <div style={filtrosStyle} className="cert-filtros">
             {categorias.map((cat) => (
                 <Boton  key={cat} 
                         texto={cat} 
@@ -37,7 +37,7 @@ const CertFiltroBar = ({categorias, activa, onChangeFiltro} : Props) => {
                         style={{
                         ...filtroBtnStyle,
                         background:
-                        activa === cat
+                        activa === cat 
                             ? "rgba(59,130,246,0.25)" 
                             : "rgba(255,255,255,0.05)",
                         border: activa === cat
