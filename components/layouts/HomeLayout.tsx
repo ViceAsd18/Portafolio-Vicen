@@ -1,43 +1,42 @@
-import NavBar from "components/organisms/Navbar/Navbar"
+    import NavBar from "components/organisms/Navbar/Navbar"
 import HeroMain from "components/organisms/Hero/HeroMain"
 import ProyectosSection from "components/organisms/Proyectos/ProyectosSection";
 import SobreMiSection from "components/organisms/SobreMi/SobreMiSection";
 import TecnologiasSection from "components/organisms/Tecnologias/TecnologiasSection"
 import CertificacionesSection from "components/organisms/Certificaciones/CertificacionesSection";
-import FooterSection from "components/organisms/Footer/FooterSection";
 
 const paginaStyle: React.CSSProperties = {
-  minHeight: "100dvh",
+    minHeight: "100dvh",
+    overflow : "hidden"
 };
 
 const contentStyle : React.CSSProperties = {
-    maxWidth: 1600,
+    width: "100%",
+    maxWidth: "1600px",
     margin: "0 auto",
-    display : 'flex',
-    flexDirection : 'column',
-    gap : 120,
+    display: "flex",
+    flexDirection: "column",
+    gap: 120,
+    overflowX: "hidden" 
 }
 
 
 const HomeLayout = () => {
     return (
         <>
-            <nav style={{position : "sticky", top : 0, zIndex : 1000}}>
-                    <NavBar></NavBar>
-            </nav>
+            <NavBar></NavBar>
 
-            <main style={paginaStyle}>
+            <main style={paginaStyle} className="main-layout">
                 
                 <section>
                     <HeroMain></HeroMain>
                 </section>
 
-                <div style={{...contentStyle, marginTop : 120}}>
-                        <SobreMiSection/>
-                        <ProyectosSection/>
-                        <TecnologiasSection></TecnologiasSection>
-                        <CertificacionesSection></CertificacionesSection>
-                        <FooterSection></FooterSection>
+                <div className="contenido-pagina" style={{ ...contentStyle, marginTop: 120 }}>
+                <section className="sobre-mi-section"><SobreMiSection /></section>
+                <section className="proyectos-section"><ProyectosSection /></section>
+                <section className="tecnologias-section"><TecnologiasSection /></section>
+                <section className="certificaciones-section"><CertificacionesSection /></section>
                 </div>
 
                     

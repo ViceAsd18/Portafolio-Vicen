@@ -1,31 +1,74 @@
+import React, { useState } from "react";
 import Navlist from "components/molecules/Navbar/Navlist";
+import { Drawer } from "antd";
+import BtnMenuMobile from "components/atoms/Navbar/BtnMenuMobile";
+import Titulo from "components/atoms/General/Titulo";
 
-const containerNavbarStyle: React.CSSProperties = {
+const navStyle: React.CSSProperties = {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
-    height: 64,
-    padding: "12px 20px",
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 100,
+    padding: "16px 28px",
+    background: "rgba(15, 23, 42, 0.9)",
     backdropFilter: "blur(10px)",
-
-    boxShadow: "0 2px 20px rgba(0, 0, 0, 0.4)",
-    background: "linear-gradient(120deg, rgba(14,33,73,0.8), rgba(30,58,138,0.6))",
-    borderBottom: "1px solid rgba(255,255,255,0.08)",
-
+    top: 0,
+    zIndex: 1000,
+    borderBottom: "1px solid rgba(255,255,255,0.05)",
+    position: "sticky",
 };
 
+const bodyStyle: React.CSSProperties = {
+    background: "rgba(17, 24, 39, 0.85)",
+    backdropFilter: "blur(12px)",
+    padding: "80px 0",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+};
 
-const NavBar = () => {
+const headerStyle: React.CSSProperties = {
+    background: "rgba(17, 24, 39, 0.85)",
+    borderBottom: "1px solid rgba(255,255,255,0.08)",
+    textAlign: "center",
+};
+
+const Navbar = () => {
+    const [open, setOpen] = useState(false);
+    const mostrarDrawer = () => setOpen(true);
+    const cerrarDrawer = () => setOpen(false);
+
     return (
-        <div style={containerNavbarStyle}>
-            <Navlist></Navlist>
-        </div>
-    )
-}
+        <nav style={navStyle}>
+            <Titulo texto="vicente" />
 
-export default NavBar
+            <div className="navlist-desktop">
+                <Navlist direction="row" />
+            </div>
+
+            <BtnMenuMobile onClick={mostrarDrawer} />
+
+            <Drawer
+                placement="right"
+                open={open}
+                onClose={cerrarDrawer}
+                zIndex={4000}
+                rootClassName="drawer-glass"
+                closeIcon={<span style={{ color: "#E5E7EB", fontSize: 20 }}>✕</span>}
+
+                styles={{
+                header : headerStyle,
+                body : bodyStyle
+                }}
+
+                title={<span style={{ color: "#E5E7EB", fontWeight: 600 }}>Menú</span>}
+
+            >
+                <div onClick={cerrarDrawer}>
+                <Navlist direction="column" />
+                </div>
+            </Drawer>
+        </nav>
+            );
+    };
+
+export default Navbar;
