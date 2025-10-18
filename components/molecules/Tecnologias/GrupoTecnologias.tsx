@@ -13,7 +13,7 @@ const cardStyle: React.CSSProperties = {
   boxShadow: "0 8px 24px rgba(0,0,0,0.25)",
   borderRadius: 12,
   color: "#fff",
-  width: "95%",
+  width: "100%",
   
 };
 

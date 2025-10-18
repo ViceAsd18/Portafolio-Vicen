@@ -2,30 +2,30 @@ import SectionContenedor from "components/atoms/General/SectionContenedor";
 import Titulo from "components/atoms/General/Titulo";
 import { Row, Col } from "antd";
 
-import IconoSpring from "assets/iconos/spring.svg";
-import IconoHtml from "assets/iconos/html.png";
-import IconoCss from "assets/iconos/css.png";
-import IconoJs from "assets/iconos/js.png";
-import IconoReact from "assets/iconos/react.png";
-import IconoBootstrap from "assets/iconos/bootstrap.png";
-import IconoJava from "assets/iconos/java.png";
-import IconoMySql from "assets/iconos/mysql.svg";
-import IconoPython from "assets/iconos/python.png";
-import IconoOracleDB from "assets/iconos/oracle-database.png";
-import IconoVscode from "assets/iconos/vscode.png";
-import IconoGitHub from "assets/iconos/github.png";
-import IconoPostman from "assets/iconos/postman.svg";
-import IconoIntellijIdea from "assets/iconos/intellij-idea.png";
-import IconoInteFigma from "assets/iconos/figma.png";
-import IconoTypeScript from "assets/iconos/typescript.png";
-import IconoGit from "assets/iconos/git.png";
-import IconoAws from "assets/iconos/aws.svg";
+const IconoSpring = "assets/iconos/spring.svg";
+const IconoHtml = "assets/iconos/html.png";
+const IconoCss = "assets/iconos/css.png";
+const IconoJs = "assets/iconos/js.png";
+const IconoReact = "assets/iconos/react.png";
+const IconoBootstrap = "assets/iconos/bootstrap.png";
+const IconoJava = "assets/iconos/java.png";
+const IconoMySql = "assets/iconos/mysql.svg";
+const IconoPython = "assets/iconos/python.png";
+const IconoOracleDB = "assets/iconos/oracle-database.png";
+const IconoVscode = "assets/iconos/vscode.png";
+const IconoGitHub = "assets/iconos/github.png";
+const IconoPostman = "assets/iconos/postman.svg";
+const IconoIntellijIdea = "assets/iconos/intellij-idea.png";
+const IconoInteFigma = "assets/iconos/figma.png";
+const IconoTypeScript = "assets/iconos/typescript.png";
+const IconoGit = "assets/iconos/git.png";
+const IconoAws = "assets/iconos/aws.svg";
 
 import GrupoTecnologias from "components/molecules/Tecnologias/GrupoTecnologias";
 
 const TecnologiasSection = () => {
   return (
-    <SectionContenedor>
+    <SectionContenedor className="tecnologias-section">
         <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
             <Titulo texto="Tecnologías" variante="tituloSecondary"  size={40}/>
 
