@@ -39,7 +39,7 @@ const colStyle : React.CSSProperties = {
 
 function HeroMain() {
     return (
-        <section id="inicio" style={heroStyle} aria-label="Presentación">
+        <section id="inicio" style={heroStyle} aria-label="Presentación" className="hero-section">
             <Row justify="center" align="middle" style={rowStyle}>
                 <Col xs={24} sm={20} md={12} lg={10} style={colStyle}>
                     <Avatar alt="imagen vicente" size={200}></Avatar>

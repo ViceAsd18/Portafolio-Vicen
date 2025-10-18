@@ -3,6 +3,7 @@ type Props = {
     children : React.ReactNode;
     padding? : string;
     variante? : "default" | "glass";
+    className?: string;
 }
 
 
@@ -39,12 +40,12 @@ const contenedorStyle : React.CSSProperties = {
     margin : "0 auto",
 }
 
-const SectionContenedor = ({children, padding = "100px 80px", variante="default"} : Props) => {
+const SectionContenedor = ({children, padding = "100px 80px", variante="default", className = ""} : Props) => {
     
     const estilo = variante === "glass" ? varianteGlass : BaseSectionStyle;
 
     return (
-        <section style={{...estilo, padding}}>
+        <section style={{...estilo, padding}} className={`section-base ${className}`}>
             <div style={contenedorStyle}>
                 {children}
             </div>

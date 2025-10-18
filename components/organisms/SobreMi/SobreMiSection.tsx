@@ -4,16 +4,10 @@ import ListaEducacion from "components/molecules/SobreMi/ListaEducacion"
 
 import { Row, Col} from "antd"
 
-const gridStyle: React.CSSProperties = {
-    display: "grid",
-    gridTemplateColumns: "2fr 1fr",
-    gap: 60,
-    alignItems: "start",
-};
 
 const SobreMiSection = () => {
     return (
-        <SectionContenedor>
+        <SectionContenedor className="sobre-mi-section">
             <Row gutter={[60,40]} align="top" justify="center">
                 <Col xs={24} sm={24} md={14} lg={14} xl={14}>
                     <SobreMiTexto></SobreMiTexto>

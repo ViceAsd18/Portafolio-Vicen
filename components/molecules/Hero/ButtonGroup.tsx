@@ -5,18 +5,18 @@ import icono_linkedin from "assets/iconos/linkedin.svg"
 import icono_github from "assets/iconos/github.svg"
 
 const buttonGroupStyle: React.CSSProperties = {
-  display: "flex",
-  gap: 24, // más aire
-  justifyContent: "center",
-  alignItems: "center",
-  marginTop: 40, // separa del subtítulo
-  flexWrap: "wrap", // se acomoda en pantallas pequeñas
+    display: "flex",
+    gap: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 40,
+    flexWrap: "wrap",
 };
 
 
 const ButtonGroup = () => {
     return (
-        <div style={buttonGroupStyle}>
+        <div style={buttonGroupStyle} className="button-group">
             <BtnPrimary label="LinkedIn" 
                         href="https://www.linkedin.com/in/vicente-ram%C3%ADrez-21336b336/" 
                         icon={

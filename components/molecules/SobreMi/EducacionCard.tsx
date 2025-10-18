@@ -2,10 +2,10 @@ import Titulo from "components/atoms/General/Titulo"
 import Parrafo from "components/atoms/General/Parrafo";
 
 type Props = {
-  logo: string;
-  institucion: string;
-  titulo: string;
-  periodo: string;
+    logo: string;
+    institucion: string;
+    titulo: string;
+    periodo: string;
 };
 
 const cardEstudioStyle: React.CSSProperties = {
@@ -24,15 +24,6 @@ const logoStyle: React.CSSProperties = {
     objectFit: "contain",
 };
 
-const tituloStyle: React.CSSProperties = {
-    margin: "4px 0",
-    color: "#cbd5e1",
-};
-
-const periodoStyle: React.CSSProperties = {
-    color: "#94a3b8",
-};
-
 const EducacionCard = ({ logo, institucion, titulo, periodo }: Props) => {
     return (
         <div style={cardEstudioStyle}>
@@ -41,7 +32,6 @@ const EducacionCard = ({ logo, institucion, titulo, periodo }: Props) => {
                 <Titulo texto={institucion} variante="tituloTercero" nivel={4} size={16} ></Titulo>
                 <Parrafo texto={titulo} size={14} color="#cbd5e1" margin="4px 0"></Parrafo>
                 <Parrafo texto={periodo} size={12} color="#94a3b8"></Parrafo>
-
             </div>
         </div>
     )

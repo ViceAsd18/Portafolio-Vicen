@@ -12,7 +12,7 @@ const SobreMiTexto = () => {
         <div style={contenedorStyle}>
             <Titulo texto="Sobre mi" variante="tituloSecondary" size={40}></Titulo>
             <div>
-                   <Parrafo color="#94a3b8" align="left" size={16} margin="16px 0" 
+                    <Parrafo color="#94a3b8" align="left" size={16} margin="16px 0" 
                     texto="Soy estudiante de Ingeniería en Informática en Duoc UC (mención Desarrollo de Software), tengo 19 años y me apasiona el desarrollo tanto frontend como backend. Además, me interesa aprender sobre cloud, especialmente AWS.">
                     </Parrafo>
 

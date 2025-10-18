@@ -3,12 +3,6 @@ import EducacionCard from "./EducacionCard";
 import logoDuocUc from "assets/iconos/duocuc.png";
 import logoUdemy from "assets/iconos/udemy.png";
 
-const listaStyle : React.CSSProperties = {
-  display : 'flex',
-  flexDirection : 'column',
-  gap : 20
-}
-
 const contenedorStyle : React.CSSProperties = {
   display : 'flex',
   flexDirection : "column",

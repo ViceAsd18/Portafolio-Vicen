@@ -1,8 +1,7 @@
-// components/atoms/Hero/Avatar.tsx
 type Props = {
   src?: string;
   alt: string;
-  size?: number; // px
+  size?: number; 
 };
 
 export default function Avatar({ src, alt, size = 160 }: Props) {
