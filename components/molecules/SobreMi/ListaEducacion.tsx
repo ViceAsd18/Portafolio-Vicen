@@ -10,26 +10,25 @@ const contenedorStyle : React.CSSProperties = {
 }
 
 const ListaEducacion = () => {
-  return (  
-      <div style={contenedorStyle}>
-        <Titulo texto="Educacion" variante="tituloSecondary" size={30}></Titulo>
+    return (  
         <div style={contenedorStyle}>
+          <Titulo texto="Educacion" variante="tituloSecondary" size={30}></Titulo>
+          <div style={contenedorStyle}>
 
-        <EducacionCard 
-        logo={logoDuocUc}
-        institucion="Duoc UC"
-        titulo="Ingeniería en Informática"
-        periodo="2024 – Actualidad"
-        />
+          <EducacionCard 
+          logo={logoDuocUc}
+          institucion="Duoc UC"
+          titulo="Ingeniería en Informática"
+          periodo="2024 – Actualidad"
+          />
 
-        <EducacionCard
-        logo={logoUdemy}
-        institucion="Udemy"
-        titulo="Spring Framework 6 & Spring Boot 3"
-        periodo="2025 enero – 2025 julio"
-        />
-
-        </div>
+          <EducacionCard
+          logo={logoUdemy}
+          institucion="Udemy"
+          titulo="Spring Framework 6 & Spring Boot 3"
+          periodo="2025 enero – 2025 julio"
+          />
+          </div>
       </div>
   )  
 

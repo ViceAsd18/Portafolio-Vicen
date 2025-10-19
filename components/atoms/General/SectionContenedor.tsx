@@ -32,7 +32,6 @@ const varianteGlass : React.CSSProperties = {
     boxShadow: "0 8px 40px rgba(147,51,234,0.1)",
     marginTop: 120,
     borderRadius: 12,
-    border : "2px solid green"
     
 }
 
@@ -41,7 +40,6 @@ const contenedorStyle : React.CSSProperties = {
     maxWidth : "1600px",
     width : "100%",
     margin : "0 auto",
-    border : "2px solid red"
 }
 
 const SectionContenedor = ({children, padding = "100px 80px", variante="default", className = ""} : Props) => {

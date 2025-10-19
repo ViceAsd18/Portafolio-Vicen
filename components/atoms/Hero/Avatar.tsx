@@ -4,6 +4,7 @@ type Props = {
   size?: number; 
 };
 
+
 export default function Avatar({ src, alt, size = 160 }: Props) {
   const box: React.CSSProperties = {
     width: size,

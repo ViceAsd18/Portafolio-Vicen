@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { certificaciones } from "data/CertData";
+import { certificaciones } from "data/CertData"
 
 import CertFiltroBar from "./CertFiltroBar";
 import CertCard from "./CertCard";
@@ -12,7 +12,6 @@ const contenedorStyle: React.CSSProperties = {
     margin: "0 auto",
     textAlign: "center",
     padding : "0 20px",
-    border : "2px solid blue"
 };
 
 

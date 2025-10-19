@@ -1,5 +1,6 @@
 import Titulo from "components/atoms/General/Titulo"
 import Parrafo from "components/atoms/General/Parrafo";
+import Logo from "components/atoms/General/Logo";
 
 type Props = {
     logo: string;
@@ -19,15 +20,14 @@ const cardEstudioStyle: React.CSSProperties = {
 };
 
 const logoStyle: React.CSSProperties = {
-    width: 48,
-    height: 48,
-    objectFit: "contain",
+    filter : "none",
+    borderRadius : 8
 };
 
 const EducacionCard = ({ logo, institucion, titulo, periodo }: Props) => {
     return (
         <div style={cardEstudioStyle}>
-            <img src={logo} alt={institucion} style={logoStyle}/>
+            <Logo src={logo} alt={institucion} style={logoStyle} ></Logo>
             <div>
                 <Titulo texto={institucion} variante="tituloTercero" nivel={4} size={16} ></Titulo>
                 <Parrafo texto={titulo} size={14} color="#cbd5e1" margin="4px 0"></Parrafo>

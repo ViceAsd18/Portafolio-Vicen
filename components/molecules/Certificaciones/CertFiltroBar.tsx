@@ -20,7 +20,6 @@ const filtrosStyle: React.CSSProperties = {
     backdropFilter: "blur(8px)",
     width: "90%",
     maxWidth: 500,
-    border : "2px solid yellow"
 };
 
 const filtroBtnStyle: React.CSSProperties = {

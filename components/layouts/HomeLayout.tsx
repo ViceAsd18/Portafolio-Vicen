@@ -17,7 +17,8 @@ const contentStyle : React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
     gap: 120,
-    overflowX: "hidden" 
+    overflowX: "hidden",
+    border : "2px solid red" 
 }
 
 

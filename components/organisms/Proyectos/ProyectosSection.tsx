@@ -1,51 +1,53 @@
-import Card from "components/molecules/Proyectos/Card";
-import PortadaClinica from "assets/proyectos/clinica/clinica-portada.png";
-import IconoJava from "assets/iconos/java.png";
-import IconoSpring from "assets/iconos/spring.svg";
-import IconoMySql from "assets/iconos/mysql.svg"
+import ProjectCard from "components/molecules/Proyectos/ProjectCard";
+import Titulo from "components/atoms/General/Titulo";
 
-import Titulo from "components/atoms/General/Titulo"
+import PortadaClinica from "assets/proyectos/clinica/clinica-portada.png"
 
+const contenedorStlye: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(320px, 400px))",
+  gap: 28,
+  justifyContent: "center",
+  alignItems: "stretch",
+  width: "100%",
+  maxWidth: 1280,
+  margin: "60px auto 0",
+  boxSizing: "border-box",
+}
 
 const ProyectosSection = () => {
   return (
-    <section id="proyectos">
+    <section id="proyectos" style={{margin : "80px 0"}}>
+      <Titulo texto="proyectos" align="center" variante="tituloSecondary" size={40}></Titulo>
+    
+      <div style={contenedorStlye} className="contenedor-proyectos">
+        <ProjectCard 
+            id="clinica-medica"
+            titulo="Clínica Médica"
+            resumen="Sistema web para clínicas pequeñas que centraliza pacientes, médicos y consultas. Permite registrar fichas, agendar turnos, marcar pagos y ver el estado de cada cita."
+            cover={PortadaClinica}
+        />
 
-          <Titulo texto="Proyectos" align="center" variante="tituloSecondary" size={40}></Titulo>
+          <ProjectCard
+          id="edutech"
+          titulo="EduTech Innovators"
+          resumen="Plataforma educativa online con gestión de cursos, usuarios y pagos. Desarrollada con React y Node.js."
+          cover={PortadaClinica}
+        />
 
-              <div className="contenedor-proyectos">
+        <ProjectCard
+          id="gamery"
+          titulo="Gamery"
+          resumen="Plataforma gamer con gestión de partidas, amigos y logros. Implementada con Java y Spring Boot."
+          cover={PortadaClinica}
+        />
+      </div>
+    
+    
+    </section>
 
-                <Card
-                  titulo="Clínica Médica"
-                  descripcion="Sistema web para clínicas pequeñas que centraliza pacientes, médicos y consultas. Permite registrar fichas, agendar turnos por fecha y hora, marcar pagos y ver el estado de cada cita."
-                  imagen={PortadaClinica}
-                  tecnologias={[
-                    { src: IconoJava, name: "Java" },
-                    { src: IconoSpring, name: "Spring Boot" },
-                    { src: IconoMySql, name: "MySql" },
-                  ]}/>
 
-                  <Card
-                    titulo="EduTech Innovators"
-                    descripcion="Plataforma educativa online con gestión de cursos, usuarios y pagos. Desarrollada con React y Node.js."
-                    imagen={PortadaClinica}
-                    tecnologias={[
-                      { src: IconoJava, name: "React" },
-                      { src: IconoSpring, name: "Spring Boot" },
-                    ]}/>
+  )
+}
 
-                    <Card
-                      titulo="EduTech Innovators"
-                      descripcion="Plataforma educativa online con gestión de cursos, usuarios y pagos. Desarrollada con React y Node.js."
-                      imagen={PortadaClinica}
-                      tecnologias={[
-                        { src: IconoJava, name: "React" },
-                        { src: IconoSpring, name: "Spring Boot" },
-                      ]}/>
-              </div>
-
-      </section>
-  );
-};
-
-export default ProyectosSection;
+export default ProyectosSection
