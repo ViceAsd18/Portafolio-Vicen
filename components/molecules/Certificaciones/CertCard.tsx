@@ -45,7 +45,7 @@ const logoStyle: React.CSSProperties = {
 
 const CertCard = ({logo, titulo, emisor, fecha, skills, url} : Props) => {
     return (
-        <article style={cardStyle}>
+        <article style={cardStyle} className="cert-card">
             <div style={logoContainer}>
                 <Logo src={logo} alt={emisor} size={100} style={logoStyle}/>
             </div>

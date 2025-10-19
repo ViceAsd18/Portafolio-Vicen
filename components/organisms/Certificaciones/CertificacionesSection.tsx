@@ -5,7 +5,7 @@ import Titulo from "components/atoms/General/Titulo"
 
 const CertificacionesSection = () => {
     return (
-   <SectionContenedor variante="glass">
+   <SectionContenedor variante="glass" className="certificaciones-section">
       <Titulo
         texto="Certificaciones"
         variante="tituloPrimary"

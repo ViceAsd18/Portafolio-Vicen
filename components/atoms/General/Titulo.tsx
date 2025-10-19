@@ -10,7 +10,7 @@ type TituloProps = {
 
 const tituloPrimary: React.CSSProperties = {
     color: "#e5e7eb",
-    fontWeight: 700,
+    fontWeight: 700,    
 };
 
 const tituloSecondary: React.CSSProperties = {

@@ -27,7 +27,7 @@
     /*HERO*/
     .btn-group,
     .button-group {
-        display: flex;
+        display: flex !important;
         gap: 12px !important;
         width: 60% !important;
     }
@@ -67,5 +67,37 @@
         font-size: 1.6rem !important;
     }
 
+    /*Certificaciones*/
+    .certificaciones-section {
+        padding: 60px 24px !important;
+    }
+
+    .certificaciones-section .certificaciones-content {
+        padding: 0px !important;
+    }
+
+    .certificaciones-section h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .cert-card {
+        width: auto !important;
+        max-width: 300px !important;
+        padding: 24px 20px;
+    }
+
+    .cert-card img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .cert-card h3,
+    .cert-card h2 {
+        font-size: 1rem !important;
+        line-height: 1.3 !important;
+    }
+
 }
 
+
+ 

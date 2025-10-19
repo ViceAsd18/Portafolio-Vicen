@@ -4,6 +4,8 @@ type Props = {
     categorias : string[];
     activa : string;
     onChangeFiltro : (categoria : string) => void;
+    border?: "1px solid rgba(255,255,255,0.08)",
+
 }
 
 const filtrosStyle: React.CSSProperties = {
@@ -16,10 +18,9 @@ const filtrosStyle: React.CSSProperties = {
     padding: "10px 12px",
     borderRadius: 16,
     backdropFilter: "blur(8px)",
-    border: "1px solid rgba(255,255,255,0.08)",
     width: "90%",
     maxWidth: 500,
-    
+    border : "2px solid yellow"
 };
 
 const filtroBtnStyle: React.CSSProperties = {
@@ -29,7 +30,7 @@ const filtroBtnStyle: React.CSSProperties = {
 
 const CertFiltroBar = ({categorias, activa, onChangeFiltro} : Props) => {
     return (
-        <div style={filtrosStyle}>
+        <div style={filtrosStyle} className="cert-filtro-bar">
             {categorias.map((cat) => (
                 <Boton  key={cat} 
                         texto={cat} 

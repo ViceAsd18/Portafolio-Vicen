@@ -6,12 +6,13 @@ import CertCard from "./CertCard";
 
 import { Col, Row } from "antd";
 
-const sectionStyle: React.CSSProperties = {
+const contenedorStyle: React.CSSProperties = {
     width: "100%",
     maxWidth: 1400,
     margin: "0 auto",
     textAlign: "center",
     padding : "0 20px",
+    border : "2px solid blue"
 };
 
 
@@ -33,7 +34,7 @@ const CertContenedor = () => {
                                     );
 
     return (
-        <section style={sectionStyle}>
+        <div style={contenedorStyle} className="certificaciones-content">
             <CertFiltroBar
                 categorias={categorias}
                 activa={categoriaSeleccionada}
@@ -47,8 +48,7 @@ const CertContenedor = () => {
                     </Col>
                 ))}
             </Row>
-
-        </section>
+        </div>
     )
 }
 
