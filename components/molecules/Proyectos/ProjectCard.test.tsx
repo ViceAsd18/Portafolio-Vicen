@@ -2,19 +2,6 @@ import { render, screen, cleanup } from '@testing-library/react'
 import { describe, it, expect, afterEach } from 'vitest'
 import ProjectCard from './ProjectCard'
 
-
-// 💡 Prompt para GitHub Copilot:
-// Refactor this Vitest test file to follow best testing practices.
-// - Group related tests using `describe` blocks (structure, styles, props, etc.)
-// - Use `beforeEach` to render the component when appropriate
-// - Use `it.each` for repetitive prop variation tests
-// - Keep only meaningful style assertions (avoid excessive or redundant checks)
-// - Maintain clear, readable test descriptions in Spanish
-// - Do not change the tested logic or component imports
-// - Keep Testing Library syntax (screen, getByText, getByAltText, etc.)
-// - Maintain current expectations, but make the code cleaner and shorter
-
-
 describe('ProjectCard', () => {
   const defaultProps = {
     id: 'proyecto-1',

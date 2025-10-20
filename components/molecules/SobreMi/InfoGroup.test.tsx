@@ -3,15 +3,6 @@ import { describe, it, expect, afterEach } from 'vitest'
 import InfoGroup from './InfoGroup'
 
 
-// 💡 Prompt para GitHub Copilot:
-// Refactoriza este archivo de pruebas de Vitest para mejorar su mantenibilidad:
-// - Agrupa los tests con `describe` (Renderizado, Estructura, Estilos, Enlaces).
-// - Usa `it.each` para probar listas repetitivas (textos y enlaces).
-// - Mantén las descripciones en español y la lógica sin cambios.
-// - Simplifica las validaciones de estilo a solo las propiedades esenciales.
-// - Usa un helper `renderInfoGroup()` para evitar renders repetidos.
-
-
 describe('InfoGroup', () => {
   afterEach(() => cleanup())
 

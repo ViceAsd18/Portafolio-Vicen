@@ -3,15 +3,6 @@ import { describe, it, expect, afterEach } from 'vitest'
 import ListaEducacion from './ListaEducacion'
 
 
-// 💡 Prompt para GitHub Copilot:
-// Refactoriza este test de Vitest para mantener el estándar de portafolio:
-// - Mantén los bloques `describe` separados (Contenido, Estructura, Estilos, Imágenes).
-// - Usa `beforeEach` con un render helper (`renderLista`).
-// - Simplifica descripciones pero conserva claridad.
-// - No elimines ninguna validación de jerarquía o estilos.
-// - Mantén descripciones en español claro.
-
-
 describe('ListaEducacion', () => {
   afterEach(() => cleanup())
 

@@ -19,4 +19,4 @@ const CertificacionesSection = () => {
     )
 }
 
-export default CertificacionesSection
+export default CertificacionesSection 

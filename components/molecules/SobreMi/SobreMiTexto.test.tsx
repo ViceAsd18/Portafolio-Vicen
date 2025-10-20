@@ -2,16 +2,6 @@ import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 import SobreMiTexto from './SobreMiTexto'
 
-// 💡 Prompt para GitHub Copilot:
-// Refactoriza este test de Vitest para seguir el estándar del portafolio:
-// - Mantén la estructura clara por responsabilidades (estructura, título, InfoGroup, párrafos).
-// - Usa un array de textos y `forEach` para evitar repetición.
-// - Verifica estilos clave (color, fontSize, margin, textAlign) sin sobretestear.
-// - Asegura validaciones semánticas para el heading y los párrafos.
-// - Mantén descripciones y nombres de test en español claro y profesional.
-
-
-
 const textos = [
   'Soy estudiante de Ingeniería en Informática en Duoc UC (Mención Desarrollo de Software), tengo 19 años y me apasiona el desarrollo tanto frontend como backend. Además, me interesa aprender sobre cloud, especialmente AWS.',
   'Me considero una persona responsable y constante, con muchas ganas de seguir avanzando profesionalmente. Aprendo rápido cuando tengo un objetivo claro; me gusta resolver problemas probando distintas alternativas y entendiendo por qué algo funciona o no. Mantengo una actitud positiva frente a nuevos desafíos y aprovecho cada proyecto como una oportunidad para crecer.',
