@@ -3,6 +3,7 @@ import Navlist from "components/molecules/Navbar/Navlist";
 import { Drawer } from "antd";
 import BtnMenuMobile from "components/atoms/Navbar/BtnMenuMobile";
 import Titulo from "components/atoms/General/Titulo";
+import Parrafo from "components/atoms/General/Parrafo";
 
 const navStyle: React.CSSProperties = {
     display: "flex",
@@ -44,7 +45,7 @@ const Navbar = () => {
 
     return (
         <nav style={navStyle}>
-            <Titulo texto="vicente" />
+            <Parrafo texto="</Vicente>"/>
 
             <div className="navlist-desktop">
                 <Navlist direction="row"/>

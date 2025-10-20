@@ -29,9 +29,6 @@ const cardStyle: React.CSSProperties = {
   boxSizing: "border-box",
   padding: "16px 0 16px",
   justifyContent: "space-between",
-
-
-
 };
 
 const imageContenedor: React.CSSProperties = {
@@ -58,9 +55,6 @@ const contentStyle: React.CSSProperties = {
   justifyContent: "flex-start",
   gap: 6,
   padding: "0 12px",
-
-  
-
 };
 
 const footerStyle: React.CSSProperties = {
@@ -68,7 +62,6 @@ const footerStyle: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
   width: "100%",
-  
 };
 
 const tecnologiasContenedor: React.CSSProperties = {
@@ -87,8 +80,8 @@ const ProjectCard = ({titulo, resumen, cover, tecnologias, repoUrl}: Props) => {
       </div>
 
       <div style={contentStyle}>
-        <Titulo texto={titulo} variante="tituloSecondary" size={22} align="center" margin="12px 0 10px 0"/>
-        <Parrafo texto={resumen} align="center" size={15} color="#cbd5e1" margin="0 auto"/>
+        <Titulo texto={titulo} variante="tituloTercero" size={22} align="center" margin="12px 0 10px 0"/>
+        <Parrafo texto={resumen} align="center" size={15} color="#94a3b8" margin="0 auto"/>
       </div>
 
       <div style={tecnologiasContenedor}>

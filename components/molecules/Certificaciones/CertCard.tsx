@@ -51,7 +51,7 @@ const CertCard = ({logo, titulo, emisor, fecha, skills, url} : Props) => {
             </div>
 
             <Titulo texto={titulo}
-                    variante="tituloSecondary"
+                    variante="tituloTercero"
                     align="center"
                     size={18}
                     margin="0 0 6px 0"

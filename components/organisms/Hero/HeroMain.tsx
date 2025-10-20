@@ -42,7 +42,7 @@ function HeroMain() {
         <section id="inicio" style={heroStyle} aria-label="Presentación" className="hero-section">
             <Row justify="center" align="middle" style={rowStyle}>
                 <Col xs={24} sm={20} md={12} lg={10} style={colStyle}>
-                    <Avatar alt="imagen vicente" size={200}></Avatar>
+                    <Avatar alt="imagen vicente" size={200} src="assets/foto-portada.png"></Avatar>
                     <TextGroup titulo="Vicente Ramírez" parrafo="Desarrollador Frontend"></TextGroup>
                     <ButtonGroup></ButtonGroup>
                 </Col>

@@ -27,8 +27,11 @@ describe('ListaEducacion', () => {
       const { container } = renderLista()
       const titulo = screen.getByText('Educacion')
       expect(titulo).toBeInTheDocument()
-      expect(titulo.tagName.toLowerCase()).toBe('h2')
-      expect(titulo).toHaveStyle({ fontSize: '30px', fontWeight: 600 })
+  expect(titulo.tagName.toLowerCase()).toBe('h2')
+  const estilo = titulo.getAttribute('style') || ''
+  expect(estilo).toMatch(/font-size:\s*30px/i)
+  // La variante 'tituloSecondary' define fontWeight: 700
+  expect(estilo).toMatch(/font-weight:\s*700/i)
     })
 
     it.each(instituciones)('renderiza la institución $nombre con toda su información', (inst) => {

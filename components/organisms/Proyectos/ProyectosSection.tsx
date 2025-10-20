@@ -22,7 +22,7 @@ const contenedorStlye: React.CSSProperties = {
 const ProyectosSection = () => {
   return (
     <section id="proyectos" style={{margin : "80px 0"}}>
-      <Titulo texto="proyectos" align="center" variante="tituloSecondary" size={40}></Titulo>
+      <Titulo texto="Proyectos" align="center" variante="tituloSecondary" size={40}></Titulo>
     
       <div style={contenedorStlye} className="contenedor-proyectos">
         <ProjectCard 

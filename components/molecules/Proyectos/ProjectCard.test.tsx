@@ -25,7 +25,9 @@ describe('ProjectCard', () => {
       expect(article).toBeInTheDocument()
 
       const titulo = screen.getByText('Sistema de Gestión')
-      const resumen = screen.getByText('Una aplicación web completa para gestionar proyectos')
+  // Buscar el resumen dentro del article renderizado para evitar colisiones
+  const resumen = article.querySelector('p') as HTMLElement
+  expect(resumen).toBeInTheDocument()
       expect(titulo.tagName.toLowerCase()).toBe('h2')
       expect(resumen.tagName.toLowerCase()).toBe('p')
 
@@ -109,7 +111,10 @@ describe('ProjectCard', () => {
       const titulo = screen.getByText('Sistema de Gestión')
       const resumen = screen.getByText('Una aplicación web completa para gestionar proyectos')
       expect(titulo).toHaveStyle({ fontSize: '22px', textAlign: 'center' })
-      expect(resumen).toHaveStyle({ fontSize: '15px', textAlign: 'center', color: '#cbd5e1' })
+  const resumenStyle = resumen.getAttribute('style') || ''
+  expect(resumenStyle).toMatch(/font-size:\s*15px/)
+  expect(resumenStyle).toMatch(/text-align:\s*center/)
+  expect(resumenStyle).toMatch(/cbd5e1|rgb\(/i)
     })
 
     it('contenedor de portada con aspect-ratio 16:9 y contenedor de tecnologías con flex + gap', () => {

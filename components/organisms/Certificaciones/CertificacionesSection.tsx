@@ -8,7 +8,7 @@ const CertificacionesSection = () => {
    <SectionContenedor variante="glass" className="certificaciones-section">
       <Titulo
         texto="Certificaciones"
-        variante="tituloPrimary"
+        variante="tituloSecondary"
         align="center"
         size={40}
         margin="0 0 20px 0"

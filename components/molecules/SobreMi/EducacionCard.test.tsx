@@ -78,7 +78,7 @@ describe('EducacionCard', () => {
       {
         label: 'institución (h4)',
         text: defaultProps.institucion,
-        styles: { fontSize: '16px', fontWeight: 500, color: '#cbd5e1' },
+        styles: { fontSize: '16px', fontWeight: 600, color: '#cbd5e1' },
       },
       {
         label: 'título (p)',

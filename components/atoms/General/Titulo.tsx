@@ -9,18 +9,27 @@ type TituloProps = {
 };
 
 const tituloPrimary: React.CSSProperties = {
-    color: "#e5e7eb",
-    fontWeight: 700,    
+    background: "linear-gradient(90deg, #38bdf8, #818cf8)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: 800,
+    letterSpacing: "-0.5px",
+    textShadow: "0 0 20px rgba(56, 189, 248, 0.25)",  
+    display : "inline-block" 
 };
 
 const tituloSecondary: React.CSSProperties = {
-    color: "#e5e7eb",
-    fontWeight: 600,
+    background: "linear-gradient(90deg, #38bdf8, #6366f1)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: 700,
+    letterSpacing: "0.2px",
 };
 
 const tituloTercero: React.CSSProperties = {
     color: "#cbd5e1",
-    fontWeight: 500,
+    fontWeight: 600,
+    letterSpacing: "0.1px",
 };
 
 const estilos = {
