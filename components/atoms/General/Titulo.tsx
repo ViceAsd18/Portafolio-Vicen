@@ -31,7 +31,13 @@ const estilos = {
 
 const Titulo = ({texto, variante = "tituloPrimary", align = "left", nivel = 2, margin = "0", color, size} : TituloProps) => {
     const estiloSeleccionado = estilos[variante];
-    const estiloFinal = {...estiloSeleccionado, textAlign : align, margin, color, fontSize : size}
+    const estiloFinal = {
+        ...estiloSeleccionado,
+        textAlign: align,
+        margin,
+        fontSize: size,
+        ...(color !== undefined && color !== null ? { color } : {})
+    }
 
     const tags = {
         1: <h1 style={estiloFinal}>{texto}</h1>,
