@@ -5,6 +5,8 @@ type Props = {
     href? : string;
     onClick? : () => void;
     style? : React.CSSProperties;
+    target?: React.HTMLAttributeAnchorTarget;
+
 }
 
 const BotonStyle: React.CSSProperties = {
@@ -16,9 +18,9 @@ const BotonStyle: React.CSSProperties = {
     boxShadow: "0 0 10px rgba(56,189,248,0.25)",
 };
 
-const Boton = ({texto, href, onClick, style} : Props) => {
+const Boton = ({texto, href, onClick, style, target = "_blank"} : Props) => {
     return (
-        <Button type="primary" href={href} onClick={onClick}  style={{...BotonStyle,...style}}>
+        <Button type="primary" href={href} onClick={onClick}  target={target} style={{...BotonStyle,...style}}>
             {texto}
         </Button>
     )

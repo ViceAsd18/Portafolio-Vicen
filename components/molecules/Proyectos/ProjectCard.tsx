@@ -1,7 +1,6 @@
 import Titulo from "components/atoms/General/Titulo";
 import Parrafo from "components/atoms/General/Parrafo";
 import Boton from "components/atoms/General/Boton";
-import { Link } from "react-router";
 import Logo from "components/atoms/General/Logo";
 
 type Props = {
@@ -9,10 +8,12 @@ type Props = {
   titulo: string;
   resumen: string;
   cover: string;
+  tecnologias: { src: string; name?: string }[];
+  repoUrl?: string;
 };
 
 const cardStyle: React.CSSProperties = {
- background: "rgba(15,23,42,0.9)",
+  background: "rgba(15,23,42,0.9)",
   border: "1px solid rgba(56,189,248,0.12)",
   borderRadius: 16,
   color: "#e2e8f0",
@@ -27,6 +28,10 @@ const cardStyle: React.CSSProperties = {
   height: "100%",
   boxSizing: "border-box",
   padding: "16px 0 16px",
+  justifyContent: "space-between",
+
+
+
 };
 
 const imageContenedor: React.CSSProperties = {
@@ -54,6 +59,8 @@ const contentStyle: React.CSSProperties = {
   gap: 6,
   padding: "0 12px",
 
+  
+
 };
 
 const footerStyle: React.CSSProperties = {
@@ -61,9 +68,18 @@ const footerStyle: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
   width: "100%",
+  
 };
 
-const ProjectCard = ({ id, titulo, resumen, cover }: Props) => {
+const tecnologiasContenedor: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 14,
+  margin: "10px 0",
+};  
+
+const ProjectCard = ({titulo, resumen, cover, tecnologias, repoUrl}: Props) => {
   return (
     <article style={cardStyle}>
       <div style={imageContenedor}>
@@ -75,11 +91,16 @@ const ProjectCard = ({ id, titulo, resumen, cover }: Props) => {
         <Parrafo texto={resumen} align="center" size={15} color="#cbd5e1" margin="0 auto"/>
       </div>
 
-      <div style={footerStyle}>
-        <Link to={`/proyectos/${id}`}>
-          <Boton texto="Ver Proyecto" />
-        </Link>
+      <div style={tecnologiasContenedor}>
+          {tecnologias.map((t, i) => (
+            <Logo key={i} src={t.src} name={t.name} size={32} />
+          ))}
       </div>
+
+      <div style={footerStyle}>
+        <Boton texto="Ver Código" href={repoUrl}/>
+      </div>
+
     </article>
   );
 };

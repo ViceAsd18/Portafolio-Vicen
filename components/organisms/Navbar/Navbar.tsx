@@ -18,18 +18,23 @@ const navStyle: React.CSSProperties = {
 };
 
 const bodyStyle: React.CSSProperties = {
-    background: "rgba(17, 24, 39, 0.85)",
-    backdropFilter: "blur(12px)",
-    padding: "80px 0",
+    background: "linear-gradient(180deg, rgba(11,16,27,0.95) 0%, rgba(15,23,42,0.95) 100%)",
+    padding: "70px 0",
     display: "flex",
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    gap: 26,    
 };
 
 const headerStyle: React.CSSProperties = {
-    background: "rgba(17, 24, 39, 0.85)",
-    borderBottom: "1px solid rgba(255,255,255,0.08)",
+    background: "rgba(15,23,42,1)",
+    borderBottom: "1px solid rgba(56,189,248,0.25)",
     textAlign: "center",
+    color: "#e2e8f0",
+    fontWeight: 600,
+    fontSize: 18,
+    letterSpacing: 0.3,
 };
 
 const Navbar = () => {
@@ -42,7 +47,7 @@ const Navbar = () => {
             <Titulo texto="vicente" />
 
             <div className="navlist-desktop">
-                <Navlist direction="row" />
+                <Navlist direction="row"/>
             </div>
 
             <BtnMenuMobile onClick={mostrarDrawer} />

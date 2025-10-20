@@ -6,18 +6,17 @@ type Props = {
 }
 
 const btnNavbarStyle = {
-  display: "inline-block",
-  padding: "8px 16px",
-  borderRadius: 9999,
-  textDecoration: "none",
-  fontWeight: 600,
-  fontSize: 16,
-  lineHeight: "1",
-  color: "#E5E7EB",
-  background: "transparent",
-  border: "1px solid transparent",
-  opacity: 0.85,
-  transition: "all 0.25s ease",
+    display: "inline-block",
+    padding: "8px 16px",
+    borderRadius: 9999,
+    textDecoration: "none",
+    fontWeight: 600,
+    fontSize: 16,
+    lineHeight: "1",
+    color: "#E5E7EB",
+    background: "transparent",
+    border: "1px solid transparent",
+    opacity: 0.85,
 }
 
 

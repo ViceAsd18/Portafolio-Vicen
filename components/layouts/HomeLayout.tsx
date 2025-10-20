@@ -18,7 +18,6 @@ const contentStyle : React.CSSProperties = {
     flexDirection: "column",
     gap: 120,
     overflowX: "hidden",
-    border : "2px solid red" 
 }
 
 
@@ -34,10 +33,10 @@ const HomeLayout = () => {
                 </section>
 
                 <div className="contenido-pagina" style={{ ...contentStyle, marginTop: 120 }}>
-                <section className="sobre-mi-section"><SobreMiSection /></section>
-                <section className="proyectos-section"><ProyectosSection /></section>
-                <section className="tecnologias-section"><TecnologiasSection /></section>
-                <section className="certificaciones-section"><CertificacionesSection /></section>
+                <section id="sobre-mi" className="sobre-mi-section"><SobreMiSection /></section>
+                <section id="proyectos" className="proyectos-section"><ProyectosSection /></section>
+                <section id="tecnologias" className="tecnologias-section"><TecnologiasSection /></section>
+                <section id="certificaciones" className="certificaciones-section"><CertificacionesSection /></section>
                 </div>
 
                     

@@ -30,3 +30,14 @@ body{
   transform: scale(1.15) rotate(3deg);
 }
 
+
+.drawer-glass .btn-navbar {
+  width: 100% !important;
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  padding: 10px 0 !important;
+  margin: 4px 0 !important;
+  color: #60a5fa !important;
+}
+
